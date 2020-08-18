@@ -1,0 +1,15 @@
+{
+  "name": "@gatsby-starter-typescript-workspace/monorepo",
+  "description": "A minimal GatsbyJS starter with TypeScript & pnpm workspace",
+  "private": true,
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "hyeseong.kim@devsisters.com"
+  },
+  "bugs": {
+    "url": "https://github.com/devsisters/gatsby-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/devsisters/gatsby-typescript-starter#readme",
+  "scripts": {
+  }
+}
