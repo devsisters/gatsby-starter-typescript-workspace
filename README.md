@@ -17,3 +17,7 @@ You can add more packages to the workspace as you need. For example:
 - Documentation
 - Gatsby plugins
 - Shared components & modules
+
+## License
+
+MIT

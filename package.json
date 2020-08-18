@@ -2,6 +2,7 @@
   "name": "@gatsby-starter-typescript-workspace/monorepo",
   "description": "A minimal GatsbyJS starter with TypeScript & pnpm workspace",
   "private": true,
+  "license": "MIT",
   "author": {
     "name": "Hyeseong Kim",
     "email": "hyeseong.kim@devsisters.com"

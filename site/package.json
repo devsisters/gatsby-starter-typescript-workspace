@@ -1,7 +1,8 @@
 {
   "name": "site",
-  "private": true,
   "description": "A minimal GatsbyJS starter with TypeScript",
+  "private": true,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devsisters/gatsby-starter-typescript-workspace.git",
