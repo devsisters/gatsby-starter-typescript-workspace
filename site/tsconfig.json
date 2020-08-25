@@ -8,6 +8,9 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
+    "noEmit": true,
+    "composite": true,
+    "incremental": true,
     "jsx": "preserve"
   },
   "include": [
