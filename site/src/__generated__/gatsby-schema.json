@@ -1136,26 +1136,6 @@
                 "defaultValue": null
               },
               {
-                "name": "port",
-                "description": "",
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "IntQueryOperatorInput",
-                  "ofType": null
-                },
-                "defaultValue": null
-              },
-              {
-                "name": "host",
-                "description": "",
-                "type": {
-                  "kind": "INPUT_OBJECT",
-                  "name": "StringQueryOperatorInput",
-                  "ofType": null
-                },
-                "defaultValue": null
-              },
-              {
                 "name": "polyfill",
                 "description": "",
                 "type": {
@@ -11364,11 +11344,11 @@
             "defaultValue": null
           },
           {
-            "name": "emitPluginDocuemtns",
+            "name": "emitPluginDocuments",
             "description": "",
             "type": {
               "kind": "INPUT_OBJECT",
-              "name": "SitePluginPluginOptionsEmitPluginDocuemtnsFilterInput",
+              "name": "SitePluginPluginOptionsEmitPluginDocumentsFilterInput",
               "ofType": null
             },
             "defaultValue": null
@@ -11531,7 +11511,7 @@
       },
       {
         "kind": "INPUT_OBJECT",
-        "name": "SitePluginPluginOptionsEmitPluginDocuemtnsFilterInput",
+        "name": "SitePluginPluginOptionsEmitPluginDocumentsFilterInput",
         "description": null,
         "fields": null,
         "inputFields": [
@@ -12263,12 +12243,12 @@
             "deprecationReason": null
           },
           {
-            "name": "emitPluginDocuemtns",
+            "name": "emitPluginDocuments",
             "description": null,
             "args": [],
             "type": {
               "kind": "OBJECT",
-              "name": "SitePluginPluginOptionsEmitPluginDocuemtns",
+              "name": "SitePluginPluginOptionsEmitPluginDocuments",
               "ofType": null
             },
             "isDeprecated": false,
@@ -12461,7 +12441,7 @@
       },
       {
         "kind": "OBJECT",
-        "name": "SitePluginPluginOptionsEmitPluginDocuemtns",
+        "name": "SitePluginPluginOptionsEmitPluginDocuments",
         "description": null,
         "fields": [
           {
@@ -13733,7 +13713,7 @@
             "deprecationReason": null
           },
           {
-            "name": "pluginCreator___pluginOptions___emitPluginDocuemtns___src___generated___gatsby_plugin_documents_graphql",
+            "name": "pluginCreator___pluginOptions___emitPluginDocuments___src___generated___gatsby_plugin_documents_graphql",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -14400,30 +14380,6 @@
             "deprecationReason": null
           },
           {
-            "name": "port",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "Int",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "host",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "polyfill",
             "description": null,
             "args": [],
@@ -14589,26 +14545,6 @@
             "defaultValue": null
           },
           {
-            "name": "port",
-            "description": "",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "IntQueryOperatorInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
-            "name": "host",
-            "description": "",
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "StringQueryOperatorInput",
-              "ofType": null
-            },
-            "defaultValue": null
-          },
-          {
             "name": "polyfill",
             "description": "",
             "type": {
@@ -14734,18 +14670,6 @@
           },
           {
             "name": "siteMetadata___description",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "port",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "host",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null
@@ -18619,7 +18543,7 @@
             "deprecationReason": null
           },
           {
-            "name": "pluginOptions___emitPluginDocuemtns___src___generated___gatsby_plugin_documents_graphql",
+            "name": "pluginOptions___emitPluginDocuments___src___generated___gatsby_plugin_documents_graphql",
             "description": null,
             "isDeprecated": false,
             "deprecationReason": null

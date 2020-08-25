@@ -1379,7 +1379,7 @@ type Query {
   allDirectory(filter: DirectoryFilterInput, sort: DirectorySortInput, skip: Int, limit: Int): DirectoryConnection!
   sitePage(path: StringQueryOperatorInput, component: StringQueryOperatorInput, internalComponentName: StringQueryOperatorInput, componentChunkName: StringQueryOperatorInput, matchPath: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput, isCreatedByStatefulCreatePages: BooleanQueryOperatorInput, pluginCreator: SitePluginFilterInput, pluginCreatorId: StringQueryOperatorInput, componentPath: StringQueryOperatorInput): SitePage
   allSitePage(filter: SitePageFilterInput, sort: SitePageSortInput, skip: Int, limit: Int): SitePageConnection!
-  site(buildTime: DateQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput, port: IntQueryOperatorInput, host: StringQueryOperatorInput, polyfill: BooleanQueryOperatorInput, pathPrefix: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): Site
+  site(buildTime: DateQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput, polyfill: BooleanQueryOperatorInput, pathPrefix: StringQueryOperatorInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): Site
   allSite(filter: SiteFilterInput, sort: SiteSortInput, skip: Int, limit: Int): SiteConnection!
   imageSharp(fixed: ImageSharpFixedFilterInput, resolutions: ImageSharpResolutionsFilterInput, fluid: ImageSharpFluidFilterInput, sizes: ImageSharpSizesFilterInput, original: ImageSharpOriginalFilterInput, resize: ImageSharpResizeFilterInput, id: StringQueryOperatorInput, parent: NodeFilterInput, children: NodeFilterListInput, internal: InternalFilterInput): ImageSharp
   allImageSharp(filter: ImageSharpFilterInput, sort: ImageSharpSortInput, skip: Int, limit: Int): ImageSharpConnection!
@@ -1408,8 +1408,6 @@ type Site implements Node {
     locale: String
   ): Date
   siteMetadata: SiteSiteMetadata
-  port: Int
-  host: String
   polyfill: Boolean
   pathPrefix: String
   id: ID!
@@ -1588,8 +1586,6 @@ enum SiteFieldsEnum {
   buildTime
   siteMetadata___title
   siteMetadata___description
-  port
-  host
   polyfill
   pathPrefix
   id
@@ -1683,8 +1679,6 @@ enum SiteFieldsEnum {
 input SiteFilterInput {
   buildTime: DateQueryOperatorInput
   siteMetadata: SiteSiteMetadataFilterInput
-  port: IntQueryOperatorInput
-  host: StringQueryOperatorInput
   polyfill: BooleanQueryOperatorInput
   pathPrefix: StringQueryOperatorInput
   id: StringQueryOperatorInput
@@ -1871,7 +1865,7 @@ enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___path
   pluginCreator___pluginOptions___emitSchema___src___generated___gatsby_schema_graphql
   pluginCreator___pluginOptions___emitSchema___src___generated___gatsby_schema_json
-  pluginCreator___pluginOptions___emitPluginDocuemtns___src___generated___gatsby_plugin_documents_graphql
+  pluginCreator___pluginOptions___emitPluginDocuments___src___generated___gatsby_plugin_documents_graphql
   pluginCreator___pluginOptions___short_name
   pluginCreator___pluginOptions___start_url
   pluginCreator___pluginOptions___background_color
@@ -2062,7 +2056,7 @@ enum SitePluginFieldsEnum {
   pluginOptions___path
   pluginOptions___emitSchema___src___generated___gatsby_schema_graphql
   pluginOptions___emitSchema___src___generated___gatsby_schema_json
-  pluginOptions___emitPluginDocuemtns___src___generated___gatsby_plugin_documents_graphql
+  pluginOptions___emitPluginDocuments___src___generated___gatsby_plugin_documents_graphql
   pluginOptions___short_name
   pluginOptions___start_url
   pluginOptions___background_color
@@ -2191,7 +2185,7 @@ type SitePluginPluginOptions {
   name: String
   path: String
   emitSchema: SitePluginPluginOptionsEmitSchema
-  emitPluginDocuemtns: SitePluginPluginOptionsEmitPluginDocuemtns
+  emitPluginDocuments: SitePluginPluginOptionsEmitPluginDocuments
   short_name: String
   start_url: String
   background_color: String
@@ -2206,11 +2200,11 @@ type SitePluginPluginOptions {
   pathCheck: Boolean
 }
 
-type SitePluginPluginOptionsEmitPluginDocuemtns {
+type SitePluginPluginOptionsEmitPluginDocuments {
   src___generated___gatsby_plugin_documents_graphql: Boolean
 }
 
-input SitePluginPluginOptionsEmitPluginDocuemtnsFilterInput {
+input SitePluginPluginOptionsEmitPluginDocumentsFilterInput {
   src___generated___gatsby_plugin_documents_graphql: BooleanQueryOperatorInput
 }
 
@@ -2228,7 +2222,7 @@ input SitePluginPluginOptionsFilterInput {
   name: StringQueryOperatorInput
   path: StringQueryOperatorInput
   emitSchema: SitePluginPluginOptionsEmitSchemaFilterInput
-  emitPluginDocuemtns: SitePluginPluginOptionsEmitPluginDocuemtnsFilterInput
+  emitPluginDocuments: SitePluginPluginOptionsEmitPluginDocumentsFilterInput
   short_name: StringQueryOperatorInput
   start_url: StringQueryOperatorInput
   background_color: StringQueryOperatorInput

@@ -3,6 +3,7 @@ importers:
     specifiers: {}
   site:
     dependencies:
+      '@cometjs/core': 0.1.0
       gatsby: 2.24.47_2bd872c63ee4a9e7641f7faa80b5d203
       gatsby-image: 2.4.16
       gatsby-plugin-manifest: 2.4.23_gatsby@2.24.47
@@ -36,6 +37,7 @@ importers:
       '@babel/core': ^7.11.1
       '@babel/plugin-transform-typescript': ^7.11.0
       '@babel/register': ^7.10.5
+      '@cometjs/core': ^0.1.0
       '@testing-library/jest-dom': ^5.11.3
       '@testing-library/react': ^10.4.8
       '@types/jest': ^26.0.10
